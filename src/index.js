@@ -14,12 +14,15 @@ import { News } from "./components/News";
 import { FAQMove } from "./components/faqMove";
 import { Footer } from "./components/footer";
 import App from "./App";
-
+import {BrowserRouter} from "react-router-dom"
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <App/> */}
-    <Navbar />
+    <BrowserRouter>
+    <App/>
+    </BrowserRouter>
+    
+    {/* <Navbar />
 
     <SectionTop />
     <AboutMove />
@@ -29,7 +32,7 @@ root.render(
     <RoadMove />
     <News />
     <FAQMove />
-    <Footer />
+    <Footer /> */}
   </React.StrictMode>
 );
 

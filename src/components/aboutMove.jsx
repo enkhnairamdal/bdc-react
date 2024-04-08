@@ -1,4 +1,4 @@
-export function AboutMove(){
+export  function AboutMove(){
     return(
         <>
                <section className="about-main lightskyblue ptb-hero-top" id="section-about-move">
