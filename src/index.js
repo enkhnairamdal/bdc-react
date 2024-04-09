@@ -3,16 +3,16 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 
 import reportWebVitals from "./reportWebVitals";
-import { Navbar } from "./components/navbar";
-import { SectionTop } from "./components/sectionTop";
-import { AboutMove } from "./components/aboutMove";
-import { IEOMove } from "./components/ieoMove";
-import { NewsMove } from "./components/newsMove";
-import { GlobalMove } from "./components/globalMove";
-import { RoadMove } from "./components/roadMove";
-import { News } from "./components/News";
-import { FAQMove } from "./components/faqMove";
-import { Footer } from "./components/footer";
+// import { Navbar } from "./components/navbar";
+// import { SectionTop } from "./components/sectionTop";
+// import { AboutMove } from "./components/aboutMove";
+// import { IEOMove } from "./components/ieoMove";
+// import { NewsMove } from "./components/newsMove";
+// import { GlobalMove } from "./components/globalMove";
+// import { RoadMove } from "./components/roadMove";
+// import { News } from "./components/News";
+// import { FAQMove } from "./components/faqMove";
+// import { Footer } from "./components/footer";
 import App from "./App";
 import {BrowserRouter} from "react-router-dom"
 const root = ReactDOM.createRoot(document.getElementById("root"));

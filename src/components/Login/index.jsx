@@ -2,37 +2,34 @@ import styles from "./styles.module.css"
 import { useState } from "react"
 import {Link } from "react-router-dom"
 import axios from 'axios'
-import ParticlesBackground from "../particle"
+
 import { Navbar } from "../Home/navbar"
 
 export default function Login (){
-    const [data , setData] = useState({
-        email:"",
-        password:"",
-    })
-    const [error , setError] = useState("")
-   
-    const handleChange = ({currentTarget:input}) =>{
-        setData({...data , [input.name]: input.value})
-    }
-    const handleSubmit = async (e) =>{
-        e.preventDefault()
-        try{
-            const url = "http://localhost:8080/api/auth";
-            const {data:res} = await axios.post(url, data);
-            localStorage.setItem("token" , res.data)
-            window.location="/"
-            console.log(res.message)
-        }catch(error){
-            if(error.response && 
-               error.response.status >=400 &&
-               error.response.status <= 500
-            ){
-                setError(error.response.data.message)
-            }
-        }
+    const [data, setData] = useState({ email: "", password: "" });
+	const [error, setError] = useState("");
 
-    }
+	const handleChange = ({ currentTarget: input }) => {
+		setData({ ...data, [input.name]: input.value });
+	};
+
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+		try {
+			const url = "http://localhost:8080/api/auth";
+			const { data: res } = await axios.post(url, data);
+			localStorage.setItem("token", res.data);
+			window.location = "/";
+		} catch (error) {
+			if (
+				error.response &&
+				error.response.status >= 400 &&
+				error.response.status <= 500
+			) {
+				setError(error.response.data.message);
+			}
+		}
+	};
     return(
         <div>
             <Navbar/>
@@ -68,7 +65,7 @@ export default function Login (){
                     </form>
                 </div>
                 <div className={styles.right}>
-                    <ParticlesBackground id="particle-canvas" />
+                    
                 <h1>Бүртгүүлэх</h1>
                     <Link to="/signup">
                         <button type="button" className={styles.white_btn}>
