@@ -68,44 +68,44 @@ export function News (){
                 </div>
                 <div className="blog-box wow fadeInUp">
                     <div className="blog-img mb-15">
-                        <a href="blog-detail.html" target="_blank"><img src="images/news-one.jpg" alt="blog"/></a>
+                        <a href="/blog1" target="_blank"><img src="images/news-one.jpg" alt="blog"/></a>
                     </div>
                     <div className="blog-des-box">
-                        <a href="blog-detail.html" target="_blank" className="blog-title">Биткойн олборлолт гэж вэ? </a>
+                        <a href="/blog1" target="_blank" className="blog-title">Биткойн олборлолт гэж вэ? </a>
                         <ul className="blog-date">
                             <li>December 14,2021</li>
                             <li>by MDKI</li>
                         </ul>
                         <p className="blog-des">Биткойныг олборлоход маш их хүчин чадалтай компьютер болон... </p>
-                        <a href="blog-detail.html" target="_blank" className="read-more">Дэлгэрэнгүй</a>
+                        <a href="/blog1" target="_blank" className="read-more">Дэлгэрэнгүй</a>
                     </div>
                 </div>
                 <div className="blog-box wow fadeInUp">
                     <div className="blog-img mb-15">
-                        <a href="blog-detail-two.html" target="_blank"><img src="images/news-2.jpg" alt="blog"/></a>
+                        <a href="/blog2" target="_blank"><img src="images/news-2.jpg" alt="blog"/></a>
                     </div>
                     <div className="blog-des-box">
-                        <a href="blog-detail-two.html" target="_blank" className="blog-title">Криптогийн талаар мэдэх хэрэгтэй зүйлс</a>
+                        <a href="/blog2" target="_blank" className="blog-title">Криптогийн талаар мэдэх хэрэгтэй зүйлс</a>
                         <ul className="blog-date">
                             <li>December 14,2021</li>
                             <li>by MDKI</li>
                         </ul>
                         <p>Блокчайн технологи дээр тулгуурлан бүтээгдсэн, цахим орчинд тоон...  </p>
-                        <a href="blog-detail-two.html" target="_blank" className="read-more">Дэлгэрэнгүй</a>
+                        <a href="/blog2" target="_blank" className="read-more">Дэлгэрэнгүй</a>
                     </div>
                 </div>
                 <div className="blog-box wow fadeInUp">
                     <div className="blog-img mb-15">
-                        <a href="blog-detail-three.html" target="_blank"><img src="images/news-3-min.jpg" alt="blog"/></a>
+                        <a href="/blog3" target="_blank"><img src="images/news-3-min.jpg" alt="blog"/></a>
                     </div>
                     <div className="blog-des-box">
-                        <a href="blog-detail-three.html" target="_blank" className="blog-title">Биткойн гэж юу вэ?</a>
+                        <a href="/blog3" target="_blank" className="blog-title">Биткойн гэж юу вэ?</a>
                         <ul className="blog-date">
                             <li>December 14,2021</li>
                             <li>by MDKI</li>
                         </ul>
                         <p>Энэ бүхэн анх 2008 оны арван нэгдүгээр сарын нэгэнд өөрийгөө Satoshi Naka... </p>
-                        <a href="blog-detail-three.html" target="_blank" className="read-more">Дэлгэрэнгүй</a>
+                        <a href="/blog3" target="_blank" className="read-more">Дэлгэрэнгүй</a>
                     </div>
                 </div>
             </div>

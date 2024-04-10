@@ -246,9 +246,8 @@ $(function() {
     /* Tokan Graph End */
     
     $(".ts-scroll").on("click", function(event) {
-        var targetPath = this.pathname || '';
         if (
-            location.pathname.replace(/^\//, '') === targetPath.replace(/^\//, '')
+            location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
             &&
             location.hostname === this.hostname
         ) {
@@ -271,8 +270,6 @@ $(function() {
             }
         }
     });
-    
-    
 
     function responsive_dropdown () {
         /* Responsive Menu */

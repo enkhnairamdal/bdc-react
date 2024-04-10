@@ -1,7 +1,6 @@
 // particle.min.js hosted on GitHub
 // Scroll down for initialisation code
-
-!(function (za) {
+!(function (a) {
   var b =
     ("object" == typeof self && self.self === self && self) ||
     ("object" == typeof global && global.global === global && global);
@@ -210,13 +209,11 @@
 // Initialisation
 
 var canvasDiv = document.getElementById("particle-canvas");
-
 var options = {
-  height: "100%",
-  particleColor: "#07689F",
+  // particleColor: '#07689F',
   particleColor: "#14beec",
-  particleBackgroundColor: "white",
-  particleBackgroundImage: "linear-gradient(90deg, #14beec, #3948a8)",
+  // particleBackgroundColor:'white',
+  // particleBackgroundImage:'linear-gradient(90deg, #14beec, #3948a8)',
   interactive: true,
   speed: "medium",
   density: "high",

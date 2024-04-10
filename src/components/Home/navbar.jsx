@@ -37,7 +37,7 @@ export function Navbar(){
 									<li><a href="files/BDC_WhitePaper.pdf" target="_blank" className="nav-link"><img src="images/file-pdf.svg" style={{width: '15px', height: '15px'}} alt="pdf"/>Whitepaper</a></li>
 								</ul>
 							</li>
-							<li className="nav-link ts-scroll" ><a href='/login' > Login </a></li>
+							<li className="nav-link ts-scroll" ><a href='/login'  > Login </a></li>
 							<li className="nav-link ts-scroll"><a href="/signup">Sign Up</a></li>
 						</ul>
 					</div>

@@ -1,7 +1,7 @@
 export function NewsMove(){
     return(
         <>
-        <section className="blog-part ptd-blog" id="section-News-move">
+        <section className="blog-part ptd-blog" id="section-News-moves">
 			<div className="container">
 				<div className="blog-slider owl-carousel">
 					<div className="blog-box wow fadeInUp">
