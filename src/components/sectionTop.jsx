@@ -1,9 +1,11 @@
 
 
+
 export function SectionTop (){ 
 	
 	return(
 		<section className="home-banner-2 flex-align" id="particle-canvas">
+
 			<div className="container">
 			<div className="ts-background" data-bg-color="#141a3a" data-bg-parallax="scroll" data-bg-parallax-speed="3">
                 <div className="ts-background-image ts-svg ts-z-index__1 ts-background-position-left d-none d-md-block" data-bg-image="assets/svg/shape-mask.svg" data-animate="ts-fadeInLeft"></div>

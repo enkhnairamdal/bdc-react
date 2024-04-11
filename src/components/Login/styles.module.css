@@ -9,15 +9,16 @@
 }
 
 .login_form_container{
-    width: 900px;
+    width: 60%;
     height: 500px;
     display: flex;
     border-radius: 10px;
+    margin-top: 80px;
     flex-wrap: wrap;
+    justify-content: center;
     box-shadow: 0px 3px 3px -2px rgb(000/20%), 0px 3px 4px 0px rgb(000/14%), 0px 1px 8px 0px rgb(000/12%);
 }
 .left {
-   
     flex: 2;
     display: flex;
     flex-direction: column;
@@ -26,6 +27,12 @@
     background-color: white;
     border-top-left-radius: 10px;
     border-bottom-left-radius:10px ;
+    
+}
+.left h1{
+    background: -webkit-linear-gradient(90deg, #14beec, #3948a8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .right h1{
     margin-top: 0;
@@ -35,11 +42,12 @@
 }
 .right{
     flex: 1;
+    gap: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #3bb19b;
+    background-image: linear-gradient(100deg, #14beec, #394aa8);
     border-top-right-radius: 10px;
     border-bottom-right-radius:10px ;
 }
@@ -47,6 +55,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 40px;
 
 }
 .form_container h1{
@@ -59,9 +68,11 @@
     width: 370px;
     padding: 15px;
     border-radius: 10px;
-    background-color: #edf5f3;
-    margin: 5px 0;
+    background-color: #edf2f5;
+    /* margin: 5px 0; */
     font-size: 14px;
+    
+    display: flex;
 }
 .error_msg{
     width: 370px;
@@ -79,15 +90,18 @@
     outline: none;
     padding: 12px 0;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     width: 180px;
     font-weight: bold;
     font-size: 14px;
     cursor: pointer;
 }
 .green_btn{
-    background-color: #3bb19b;
+    background-color: white;
+    background-image: linear-gradient(5deg, #14beec, #394aa8);
     color: white;
     margin: 10px;
+    width: 375px;
+ 
 }
 

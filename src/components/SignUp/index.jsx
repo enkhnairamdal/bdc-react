@@ -8,6 +8,7 @@ export default function Signup (){
     const [data , setData] = useState({
         firstName:"",
         lastName:"",
+        phone:"",
         email:"",
         password:"",
     })
@@ -38,16 +39,23 @@ export default function Signup (){
          <div className={styles.signup_container}>
             <div className={styles.signup_form_container}>
                 <div className={styles.left}>
-                    <h1>Нэвтрэх</h1>
+                    {/* <h1>Нэвтрэх</h1>
                     <Link to="/login">
                         <button type="button" className={styles.white_btn}>
-                            Нэвтрэх
+                            <span id="span">Нэвтрэх</span>
                         </button>
-                    </Link>
+                    </Link> */}
+                    <div className="col-lg-6 col-md-12 text-center flex-align justify-center wow fadeInLeft" id="signup-img">
+                    <div className="work-box" style={{width:"180px" , height:"180px"}} id="ico" >
+							<div className="work-box-bg my-0"></div>
+							<img src="images/bdc-ico-prgoress-5 zass.png" className="rotation-img"  alt="Work Process"/>
+						</div>
+					</div>
+                  
                 </div>
                 <div className={styles.right}>
                     <form action="" className={styles.form_container} onSubmit={handleSubmit}>
-                        <h1>Бүртгүүлэх</h1>
+                        <h1 >Бүртгүүлэх</h1>
                         <input 
                             type="text"
                             placeholder="Овог"
@@ -64,6 +72,16 @@ export default function Signup (){
                             name="lastName"
                             onChange={handleChange}
                             value={data.lastName}
+                            required
+                            className={styles.input}
+
+                        />
+                        <input 
+                            type="text"
+                            placeholder="Утасны дугаар"
+                            name="phone"
+                            onChange={handleChange}
+                            value={data.phone}
                             required
                             className={styles.input}
 
@@ -88,6 +106,7 @@ export default function Signup (){
                             className={styles.input}
 
                         />
+                        <a href="/login">Нэвтрэх</a>
                         {error && <div className={styles.error_msg}>{error}</div>}
                         <button type="submit" className={styles.green_btn}>
                             Бүртгүүлэх

@@ -246,8 +246,9 @@ $(function() {
     /* Tokan Graph End */
     
     $(".ts-scroll").on("click", function(event) {
+        var targetPath = this.pathname || '';
         if (
-            location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
+            location.pathname.replace(/^\//, '') === targetPath.replace(/^\//, '')
             &&
             location.hostname === this.hostname
         ) {

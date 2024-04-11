@@ -66,12 +66,12 @@ export default function Login (){
                 </div>
                 <div className={styles.right}>
                     
-                <h1>Бүртгүүлэх</h1>
-                    <Link to="/signup">
-                        <button type="button" className={styles.white_btn}>
-                        Бүртгүүлэх
-                        </button>
-                    </Link>
+                <div className="col-lg-6 col-md-12 text-center flex-align justify-center wow fadeInLeft" id="signup-img">
+                    <div className="work-box" style={{width:"180px" , height:"180px"}} id="ico" >
+							<div className="work-box-bg my-0"></div>
+							<img src="images/bdc-ico-prgoress-5 zass.png" className="rotation-img"  alt="Work Process"/>
+						</div>
+					</div>
                 </div>
             </div>
         </div>
