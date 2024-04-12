@@ -1190,12 +1190,13 @@ _______________________________________________________*/
 .home-banner-2 {
   overflow: hidden;
 }
-#particle-canvas {
+#tsparticles{
   width: 100vw;
   height: 100vh;
  
+ 
 }
-#particle-canvas canvas {
+#tsparticles canvas {
   position: absolute !important;
   width: 100% !important;
   height: 100% !important;
@@ -1203,6 +1204,7 @@ _______________________________________________________*/
   left: 0;
   z-index: 0 !important;
   opacity: 0.5;
+  background-image:url("");
 }
 .home-banner-2 {
   padding-top: 84px;

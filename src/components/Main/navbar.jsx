@@ -1,6 +1,5 @@
 
 
-
 export function Navbar(){
     const handleLogout =()=>{
       localStorage.removeItem("token")
@@ -13,7 +12,7 @@ export function Navbar(){
 			<div className="row flex-align">
 				<div className="col-lg-2 col-md-3 col-8">
 					<div className="logo">
-            <a href="index.html"><img src="images/logo-bdc-2.png" alt="BDC"/></a>
+            <a href="/"><img src="images/logo-bdc-2.png" alt="BDC"/></a>
 					</div>
 				</div>
 				<div className="col-lg-10 col-md-9 col-4 text-right">
@@ -35,15 +34,18 @@ export function Navbar(){
 									<li><a href="files/BDC_WhitePaper.pdf" target="_blank" className="nav-link"><img src="images/file-pdf.svg" style={{width: '15px', height: '15px'}} alt="pdf"/>Whitepaper</a></li>
 								</ul>
 							</li>
-							<li className="nav-link ts-scroll" ><a onClick={handleLogout}> Logout </a></li>
 							
+							<li className="nav-link ts-scroll" ><a onClick={handleLogout}> Logout </a></li>
 						</ul>
 					</div>
+					
 				</div>
+				
 			</div>
 		</div>
        
 	</header>
+	
     <div id="fb-root"></div>
 
   

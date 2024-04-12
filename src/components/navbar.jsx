@@ -46,6 +46,7 @@ export function Navbar(){
 		</div>
         
 	</header>
+	
     <div id="fb-root"></div>
 
   
