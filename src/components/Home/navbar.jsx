@@ -1,13 +1,8 @@
 
 import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
-import FloatingLabel from 'react-bootstrap/FloatingLabel';
-import Form from 'react-bootstrap/Form';
 export function Navbar(){
-    // const [show, setShow] = useState(false);
-    // const handleClose = () => setShow(false);
-    // const handleShow = () => setShow(true);
+  
+    
     return(
         <> 
         <header className="transition">
@@ -24,7 +19,7 @@ export function Navbar(){
 					</div>
 					<div className="menu">
 						<ul className="d-inline-block open_close">
-							<li className="nav-link ts-scroll"><a href="#section-about-move "  >About</a></li>
+							<li className="nav-link ts-scroll"><a href="#section-about-move"   >About</a></li>
 							<li className="nav-link ts-scroll"><a href="#section-IEO-move">IEO</a></li>
 							<li className="nav-link ts-scroll"><a href="#section-Global-move">Global Partners</a></li>
 							<li className="nav-link ts-scroll"><a href="#section-Road-move">Roadmap</a></li>

@@ -31,8 +31,8 @@ export default function Login (){
 		}
 	};
     return(
-        <div>
-            <Navbar/>
+        <div className={styles.login_bigcontainer}>
+            <Navbar />
              <div className={styles.login_container}>
             <div className={styles.login_form_container}>
                 <div className={styles.left}>
@@ -67,9 +67,12 @@ export default function Login (){
                 <div className={styles.right}>
                     
                 <div className="col-lg-6 col-md-12 text-center flex-align justify-center wow fadeInLeft" id="signup-img">
-                    <div className="work-box" style={{width:"180px" , height:"180px"}} id="ico" >
-							<div className="work-box-bg my-0"></div>
-							<img src="images/bdc-ico-prgoress-5 zass.png" className="rotation-img"  alt="Work Process"/>
+                    <div className="work-box"  id="ico" >
+							<div className="work-box-bg my-0  " >
+                         
+                            </div>
+                            <img src="images/bdc-ico-prgoress-5 zass.png" className="rotation-img"  alt="Work Process"/>
+							
 						</div>
 					</div>
                 </div>

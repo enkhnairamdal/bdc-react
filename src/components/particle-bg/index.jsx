@@ -1,4 +1,4 @@
-import styles from "./particle-style.css"
+
 import Particles from "react-tsparticles"
 import { useCallback } from "react";
 import { loadSlim } from "tsparticles-slim"
@@ -18,9 +18,13 @@ export default function ParticlesBg (){
 		id="tsparticles"
 		init={particlesInit}
 		loaded={particlesLoaded}
-		options={{
+		options={{ 
+			
+			fullScreen: false,
 			fpsLimit: 60,
+			
 			interactivity: {
+				
 				events: {
 					onClick: {
 						enable: true,
@@ -28,7 +32,7 @@ export default function ParticlesBg (){
 					},
 					onHover: {
 						enable: true,
-						mode: "repulse",
+						mode: "grab",
 					},
 					resize: true,
 				},
@@ -36,21 +40,21 @@ export default function ParticlesBg (){
 					push: {
 						quantity: 4,
 					},
-					repulse: {
-						distance: 200,
+					grab: {
+						distance: 100,
 						duration: 0.4,
 					},
 				},
 			},
 			particles: {
 				color: {
-					value: "#33DDFF",
+					value: "#33D4FF",
 				},
 				links: {
-					color: "#33DDFF",
+					color: "#33D4FF",
 					distance: 120,
 					enable: true,
-					opacity: 0.5,
+					opacity: 1,
 					width: 1,
 				},
 				move: {
@@ -60,7 +64,7 @@ export default function ParticlesBg (){
 						default: "bounce",
 					},
 					random: false,
-					speed: 3,
+					speed: 2,
 					straight: false,
 				},
 				number: {
@@ -77,7 +81,7 @@ export default function ParticlesBg (){
 					type: "circle",
 				},
 				size: {
-					value: { min: 1, max: 5 },
+					value: { min: 2, max: 5 },
 				},
 			},
 			detectRetina: true,

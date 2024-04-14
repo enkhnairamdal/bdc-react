@@ -17,8 +17,7 @@ export default function Home(){
         <body>
             <Navbar/>
             <SectionTop />
-            
-            
+           
             <AboutMove />
             <IEOMove />
             <NewsMove />
