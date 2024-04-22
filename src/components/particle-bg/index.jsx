@@ -55,7 +55,7 @@ export default function ParticlesBg (){
 					distance: 120,
 					enable: true,
 					opacity: 1,
-					width: 1,
+					width: 0.5	,
 				},
 				move: {
 					direction: "none",
@@ -64,15 +64,15 @@ export default function ParticlesBg (){
 						default: "bounce",
 					},
 					random: false,
-					speed: 2,
+					speed: 1,
 					straight: false,
 				},
 				number: {
 					density: {
 						enable: true,
-						area: 550,
+						area: 600,
 					},
-					value: 80,
+					value: 100,
 				},
 				opacity: {
 					value: 0.5,
@@ -81,7 +81,7 @@ export default function ParticlesBg (){
 					type: "circle",
 				},
 				size: {
-					value: { min: 2, max: 5 },
+					value: { min: 2, max: 2 },
 				},
 			},
 			detectRetina: true,

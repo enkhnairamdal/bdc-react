@@ -38,7 +38,7 @@ export function Navbar(){
 								</ul>
 							</li>
 							<li className="nav-link ts-scroll" ><a > Login </a></li>
-							<li className="nav-link ts-scroll"><a href="#section-News-move">Sign Up</a></li>
+							<li className="nav-link ts-scroll"><a >Sign Up</a></li>
 						</ul>
 					</div>
 				</div>

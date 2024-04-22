@@ -34,7 +34,8 @@ export default function Signup (){
         }
     }
     return(
-       <div>
+       <div  style={{display:"block", backgroundColor: "#f5f5f5", width: "100%",
+       height: "100%"}}>
         <Navbar/>
          <div className={styles.signup_container}>
             <div className={styles.signup_form_container}>
@@ -54,7 +55,7 @@ export default function Signup (){
                   
                 </div>
                 <div className={styles.right}>
-                    <form action="" className={styles.form_container} onSubmit={handleSubmit}>
+                    <form action="" className={styles.form_container} style={{position:"relative"}} onSubmit={handleSubmit}>
                         <h1 >Бүртгүүлэх</h1>
                         <input 
                             type="text"
@@ -106,7 +107,7 @@ export default function Signup (){
                             className={styles.input}
 
                         />
-                        <a href="/login">Нэвтрэх</a>
+                        <a href="/login" style={{position:"absolute", top:"420px", right:"5px", color:"#335EFF"}}>Нэвтрэх</a>
                         {error && <div className={styles.error_msg}>{error}</div>}
                         <button type="submit" className={styles.green_btn}>
                             Бүртгүүлэх

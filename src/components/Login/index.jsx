@@ -36,7 +36,7 @@ export default function Login (){
              <div className={styles.login_container}>
             <div className={styles.login_form_container}>
                 <div className={styles.left}>
-                <form action="" className={styles.form_container} onSubmit={handleSubmit}>
+                <form action="" className={styles.form_container} style={{position:"relative"}}  onSubmit={handleSubmit}>
                         <h1>Нэвтрэх</h1>
                         <input 
                             type="email"
@@ -58,6 +58,7 @@ export default function Login (){
                             className={styles.input}
 
                         />
+                        <a href="/login" style={{position:"absolute", top:"250px", right:"13px", color:"#335EFF"}}>Бүртгүүлэх</a>
                         {error && <div className={styles.error_msg}>{error}</div>}
                         <button type="submit" className={styles.green_btn}>
                              Нэвтрэх
@@ -72,7 +73,6 @@ export default function Login (){
                          
                             </div>
                             <img src="images/bdc-ico-prgoress-5 zass.png" className="rotation-img"  alt="Work Process"/>
-							
 						</div>
 					</div>
                 </div>

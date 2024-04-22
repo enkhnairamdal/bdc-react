@@ -2,7 +2,12 @@
 import { useState } from 'react';
 export function Navbar(){
   
-    
+  window.onload = function() {
+    if (window.location.hash === "#section-about-move") {
+      document.getElementById("section-about-move").scrollIntoView()
+    }
+  }
+ 
     return(
         <> 
         <header className="transition">
@@ -19,7 +24,7 @@ export function Navbar(){
 					</div>
 					<div className="menu">
 						<ul className="d-inline-block open_close">
-							<li className="nav-link ts-scroll"><a href="#section-about-move"   >About</a></li>
+							<li className="nav-link ts-scroll"><a href="#section-about-move">About</a></li>
 							<li className="nav-link ts-scroll"><a href="#section-IEO-move">IEO</a></li>
 							<li className="nav-link ts-scroll"><a href="#section-Global-move">Global Partners</a></li>
 							<li className="nav-link ts-scroll"><a href="#section-Road-move">Roadmap</a></li>
@@ -32,42 +37,19 @@ export function Navbar(){
 									<li><a href="files/BDC_WhitePaper.pdf" target="_blank" className="nav-link"><img src="images/file-pdf.svg" style={{width: '15px', height: '15px'}} alt="pdf"/>Whitepaper</a></li>
 								</ul>
 							</li>
-							<li className="nav-link ts-scroll" ><a href='/login'  > Login </a></li>
+							<li className="nav-link ts-scroll" ><a href='/login'>Login</a></li>
 							<li className="nav-link ts-scroll"><a href="/signup">Sign Up</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-        {/* <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-        <FloatingLabel
-        controlId="floatingInput"
-        label="Email address"
-        className="mb-3"
-      >
-        <Form.Control type="email" placeholder="name@example.com" />
-      </FloatingLabel>
-      <FloatingLabel controlId="floatingPassword" label="Password">
-        <Form.Control type="password" placeholder="Password" />
-      </FloatingLabel>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Sign Up
-          </Button>
-        </Modal.Footer>
-      </Modal> */}
+      
 	</header>
     <div id="fb-root"></div>
 
   
+        
 <div id="fb-customer-chat" className="fb-customerchat"></div>
     </>
     )
