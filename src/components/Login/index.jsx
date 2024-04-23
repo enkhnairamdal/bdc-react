@@ -3,9 +3,9 @@ import { useState } from "react"
 import {Link } from "react-router-dom"
 import axios from 'axios'
 
-import { Navbar } from "../Home/navbar"
 
-export default function Login (){
+
+export default function Login ({signModal ,signToggleModal,setSignModal }){
     const [data, setData] = useState({ email: "", password: "" });
 	const [error, setError] = useState("");
 
@@ -31,7 +31,7 @@ export default function Login (){
 		}
 	};
     return(
-        <div className={styles.login_bigcontainer}>
+      
  
              <div className={styles.login_container}>
             <div className={styles.login_form_container}>
@@ -59,7 +59,7 @@ export default function Login (){
                             className={styles.input}
 
                         />
-                        <a href="/login" style={{position:"absolute", top:"250px", right:"13px", color:"#335EFF"}}>Бүртгүүлэх</a>
+                        <a onClick={signToggleModal} style={{position:"absolute", top:"250px", right:"13px", color:"#335EFF"}}>Бүртгүүлэх</a>
                         {error && <div className={styles.error_msg}>{error}</div>}
                         <button type="submit" className={styles.green_btn}>
                              Нэвтрэх
@@ -68,7 +68,7 @@ export default function Login (){
                 </div>
                 <div className={styles.right}>
                     
-                <div className="col-lg-6 col-md-12 text-center flex-align justify-center wow fadeInLeft" id="signup-img">
+                <div className="col-lg-8 col-md-12 text-center flex-align justify-center " id="signup-img">
                     <div className="work-box"  id="ico" >
 							<div className="work-box-bg my-0  " >
                          
@@ -79,6 +79,6 @@ export default function Login (){
                 </div>
             </div>
         </div>
-        </div>
+      
     )
 }

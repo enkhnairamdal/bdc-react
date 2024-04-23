@@ -2,7 +2,7 @@ import styles from "./styles.module.css"
 import { useState , useEffect } from "react"
 import {Link , useNavigate} from "react-router-dom"
 import axios from 'axios'
-import { Navbar } from "../Home/navbar"
+
 
 export default function Signup (){
     const [data , setData] = useState({
@@ -53,9 +53,8 @@ export default function Signup (){
         }
       }, [cpassword, data.password]);
     return(
-       <div id="signup" style={{display:"block", backgroundColor: "#f5f5f5", width: "100%",
-       height: "100%"}}>
-        <Navbar/>
+       
+       
          <div className={styles.signup_container}>
             <div className={styles.signup_form_container}>
                 <div className={styles.left}>
@@ -138,6 +137,6 @@ export default function Signup (){
                 </div>
             </div>
         </div>
-       </div>
+    
     )
 }

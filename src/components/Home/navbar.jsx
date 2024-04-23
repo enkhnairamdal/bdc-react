@@ -1,14 +1,17 @@
 
 import { useState , useEffect } from "react"
 import Login from "../Login"
+import Signup from "../SignUp"
 
 export function Navbar(){
-    const [modal , setModal] = useState (false)
-
+    const [loginModal , setLoginModal] = useState (false)
+	const [signModal , setSignModal] = useState (false)
     const toggleModal = () => {
-        setModal(!modal)
+        setLoginModal(!loginModal)
     }
-
+	const signToggleModal = () => {
+        setSignModal(!signModal)
+    }
     return(
         <> 
         <header className="transition">
@@ -39,7 +42,7 @@ export function Navbar(){
 								</ul>
 							</li>
 							<li className="nav-link ts-scroll" ><a onClick={toggleModal}>Login</a></li>
-							<li className="nav-link ts-scroll"><a href="#signup">Sign Up</a></li>
+							<li className="nav-link ts-scroll"><a onClick={signToggleModal}>Sign Up</a></li>
 						</ul>
 					</div>
 				</div>
@@ -49,7 +52,8 @@ export function Navbar(){
 	</header>
     <div id="fb-root"></div>
 <div id="fb-customer-chat" className="fb-customerchat"></div>
-    {modal && <Login />}
+    {loginModal && <Login signModal = {signModal} signToggleModal={signToggleModal} setSignModal={setSignModal}/>}
+	{signModal && <Signup />}
     </>
     )
 }
