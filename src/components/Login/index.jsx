@@ -32,10 +32,11 @@ export default function Login (){
 	};
     return(
         <div className={styles.login_bigcontainer}>
-            <Navbar />
+ 
              <div className={styles.login_container}>
             <div className={styles.login_form_container}>
                 <div className={styles.left}>
+               
                 <form action="" className={styles.form_container} style={{position:"relative"}}  onSubmit={handleSubmit}>
                         <h1>Нэвтрэх</h1>
                         <input 

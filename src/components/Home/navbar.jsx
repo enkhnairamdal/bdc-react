@@ -1,13 +1,14 @@
 
-import { useState } from 'react';
+import { useState , useEffect } from "react"
+import Login from "../Login"
+
 export function Navbar(){
-  
-  window.onload = function() {
-    if (window.location.hash === "#section-about-move") {
-      document.getElementById("section-about-move").scrollIntoView()
+    const [modal , setModal] = useState (false)
+
+    const toggleModal = () => {
+        setModal(!modal)
     }
-  }
- 
+
     return(
         <> 
         <header className="transition">
@@ -31,14 +32,14 @@ export function Navbar(){
 							<li className="nav-link ts-scroll"><a href="#section-News-move">News</a></li>
 							<li className="mega-menu">
 								<span className="opener plus"></span>
-								<a href="#">Whitepaper</a>
+								<a href="">Whitepaper</a>
 								<ul className="transition">
 									
 									<li><a href="files/BDC_WhitePaper.pdf" target="_blank" className="nav-link"><img src="images/file-pdf.svg" style={{width: '15px', height: '15px'}} alt="pdf"/>Whitepaper</a></li>
 								</ul>
 							</li>
-							<li className="nav-link ts-scroll" ><a href='/login'>Login</a></li>
-							<li className="nav-link ts-scroll"><a href="/signup">Sign Up</a></li>
+							<li className="nav-link ts-scroll" ><a onClick={toggleModal}>Login</a></li>
+							<li className="nav-link ts-scroll"><a href="#signup">Sign Up</a></li>
 						</ul>
 					</div>
 				</div>
@@ -47,10 +48,10 @@ export function Navbar(){
       
 	</header>
     <div id="fb-root"></div>
-
-  
-        
 <div id="fb-customer-chat" className="fb-customerchat"></div>
+    {modal && <Login />}
     </>
     )
 }
+
+

@@ -1,6 +1,6 @@
 import { Route, Routes, Navigate } from "react-router-dom";
 import Signup from "./components/SignUp";
-import Login from "./components/Login";
+import Login from "./components/Home";
 import Home from "./components/Home";
 import Main from "./components/Main";
 import { AboutMove } from "./components/aboutMove";
@@ -22,8 +22,8 @@ function App() {
       <Route path="/blog1" exact element={<Blog1 />} />
       <Route path="/blog2" exact element={<Blog2 />} />
       <Route path="/blog3" exact element={<Blog3 />} />
-      <Route path="/signup" exact element={<Signup />} />
-      <Route path={user ? "/" : "/login"} exact element={<Login />} />
+
+    
     </Routes>
   );
 }

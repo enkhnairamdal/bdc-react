@@ -99,7 +99,7 @@
 }
 .green_btn{
     background-color: white;
-    background-image: linear-gradient(5deg, #14beec, #394aa8);
+    background-image: linear-gradient(90deg, #14beec, #394aa8);
     color: white;
     margin-top: 10px;
     width: 375px;
@@ -120,6 +120,9 @@
     }
     .green_btn{
         width: 330px;
+    }
+    .signup_form_container{
+        margin-top: 40px;
     }
     
   }

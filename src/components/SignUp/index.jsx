@@ -1,5 +1,5 @@
 import styles from "./styles.module.css"
-import { useState } from "react"
+import { useState , useEffect } from "react"
 import {Link , useNavigate} from "react-router-dom"
 import axios from 'axios'
 import { Navbar } from "../Home/navbar"
@@ -12,40 +12,54 @@ export default function Signup (){
         email:"",
         password:"",
     })
+    const [cpassword, setCpassword] = useState('');
     const [error , setError] = useState("")
     const navigate = useNavigate()
+    const password = data.password;
+    let userInput ={}
     const handleChange = ({currentTarget:input}) =>{
         setData({...data , [input.name]: input.value})
     }
     const handleSubmit = async (e) =>{
         e.preventDefault()
+        if (password.length > 0) {
+            if (password === cpassword) {
+                userInput ={ ...data}
         try{
-            const url = "http://localhost:8080/api/users";
+            const url = "http://localhost:8080/api/users";  
             const {data:res} = await axios.post(url, data);
             navigate("/login")
             console.log(res.message)
-        }catch(error){
+        }
+    
+        catch(error){
             if(error.response && 
                error.response.status >= 400 &&
                error.response.status <= 500
             ){
                 setError(error.response.data.message)
-            }
-        }
+             }
+         }
+      }
     }
+    
+    }
+    useEffect(() => {
+        if (password === cpassword) {
+          userInput = { ...data };
+          setError(false);
+        } else {
+          setError(true);
+        }
+      }, [cpassword, data.password]);
     return(
-       <div  style={{display:"block", backgroundColor: "#f5f5f5", width: "100%",
+       <div id="signup" style={{display:"block", backgroundColor: "#f5f5f5", width: "100%",
        height: "100%"}}>
         <Navbar/>
          <div className={styles.signup_container}>
             <div className={styles.signup_form_container}>
                 <div className={styles.left}>
-                    {/* <h1>Нэвтрэх</h1>
-                    <Link to="/login">
-                        <button type="button" className={styles.white_btn}>
-                            <span id="span">Нэвтрэх</span>
-                        </button>
-                    </Link> */}
+                  
                     <div className="col-lg-6 col-md-12 text-center flex-align justify-center wow fadeInLeft" id="signup-img">
                     <div className="work-box" style={{width:"180px" , height:"180px"}} id="ico" >
 							<div className="work-box-bg my-0"></div>
@@ -55,7 +69,7 @@ export default function Signup (){
                   
                 </div>
                 <div className={styles.right}>
-                    <form action="" className={styles.form_container} style={{position:"relative"}} onSubmit={handleSubmit}>
+                    <form action="" className={styles.form_container} onSubmit={handleSubmit}>
                         <h1 >Бүртгүүлэх</h1>
                         <input 
                             type="text"
@@ -107,7 +121,15 @@ export default function Signup (){
                             className={styles.input}
 
                         />
-                        <a href="/login" style={{position:"absolute", top:"420px", right:"5px", color:"#335EFF"}}>Нэвтрэх</a>
+                         <input 
+                            type="password"
+                            placeholder="Нууц үгээдахин оруулна уу"
+                            onChange={(e)=> setCpassword(e.target.value)}
+                            required
+                            className={styles.input}
+
+                        />
+                        {/* <a href="/login" style={{position:"absolute", top:"495px", right:"5px", color:"#335EFF"}}>Нэвтрэх</a> */}
                         {error && <div className={styles.error_msg}>{error}</div>}
                         <button type="submit" className={styles.green_btn}>
                             Бүртгүүлэх
