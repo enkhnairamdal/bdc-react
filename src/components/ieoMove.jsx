@@ -10,9 +10,9 @@ export function IEOMove(){
 							<h2 className="information-token-head">Токены тухай</h2>
 							<ul>
 								<li><label>Токены нэр:</label> <span>Blockchain Data Center - BDC</span></li>
-								<li><label>2догч зах зээлд(Listing)тавигдах үнэ:</label> <span>100 MNT</span></li>
+								<li><label>Хоёрдогч зах зээлд(Listing)тавигдах үнэ:</label> <span>100 MNT</span></li>
 								<li><label>Нийт IEO хийх токены тоо ширхэг:</label> <span>200.000.000</span></li>
-								<li><label>Токены стандарт:</label> <span>KLAYTN</span></li>
+								<li><label>Токены стандарт:</label> <span>ERC-20</span></li>
 							</ul>
 							<div className="clear"></div>
 						</div>
@@ -61,12 +61,12 @@ export function IEOMove(){
 						<div className="work-box">
 							<h3 className="work-process-title pb-25">BDC токений өгөөж:</h3>
 							<p className="work-des pb-20"> 
-								BDC койн нь сар тутамд олборлолтын 30%-ийг эзэмшигчдэд (BDC HOLDER) биткойноор хувиарлан өгч, 30%-иар Блокчейн дата төвийн өргөжүүлэлт, 20%-иар нь өөрсдийн токеныг биржээс худалдан авч устгалд оруулна. Харин  20% нь “Block box  AC” төхөөрөмжийн засвар, Chip-upgrade, сайжруулалтанд зарцуулагдаж, компанийн ашиг болох юм.</p>
+								BDC койн нь сар тутамд олборлолтын 30%-ийг эзэмшигчдэд (BDC HOLDER) биткойноор хуваарилан өгч, 30%-ар Блокчейн дата төвийн өргөжүүлэлд, 20%-ар нь өөрсдийн токеныг биржээс худалдан авч устгалд оруулна. Харин  20% нь “Block box  AC” төхөөрөмжийн засвар, Chip-upgrade, сайжруулалтад зарцуулагдаж, компанийн ашиг болох юм.</p>
 							<ul className="check-list">
-								<li><span><i className="fa fa-check" aria-hidden="true"></i></span> <p>Сар бүр 1 BDC тутамд 1 сатоши тараана.  Харин дата төв баригдаж, ажиллагаанд орсноос эхлэн биткойн олборлолтын 30%-ийг хувиарлана</p></li>
-								<li><span><i className="fa fa-check" aria-hidden="true"></i></span> <p>MBDC - 1$/доллартай тэнцэх бөгөөд зөвхөн цаашид хэрэгжих төслүүдэд хөрөнгө оруулалт хийх байдлаар ашиглана</p></li>
+								<li><span><i className="fa fa-check" aria-hidden="true"></i></span> <p>Сар бүр 1 BDC тутамд 1 сатоши тараана.  Харин дата төв баригдаж, ажиллагаанд орсноос эхлэн биткойн олборлолтын 30%-ийг хуваарилна</p></li>
+								<li><span><i className="fa fa-check" aria-hidden="true"></i></span> <p>MBDC - 1$/доллартой  тэнцэх бөгөөд зөвхөн цаашид хэрэгжих төслүүдэд хөрөнгө оруулалт хийх байдлаар ашиглана</p></li>
 								<li><span><i className="fa fa-check" aria-hidden="true"></i></span> <p>Ногдол ашиг- Цаашид хэрэгжих төслүүд, хамтрагч компаниудын тодорхой ашгаас сар бүр токеноо staking хийсэн хэрэглэгчдэдээ тараана</p></li>
-								<li><span><i className="fa fa-check" aria-hidden="true"></i></span> <p>BDC token market fee 10%</p></li>
+								<li><span><i className="fa fa-check" aria-hidden="true"></i></span> <p>BDC токен зах зээлийн хураамж 10%</p></li>
 								
 							</ul>
 						</div>

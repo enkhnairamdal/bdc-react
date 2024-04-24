@@ -20,8 +20,8 @@ export function SectionTop (){
 						<div className="banner-tow-content">
 							<h1 className="banner-heading-tow">Биткойн олборлолт хийх боломж <br/><span>BDC Токен</span></h1>
 							<p className="banner-des"> 
-								<a href="https://bitfury.com" style={{color: 'darkorange' ,fontWeight: 900}} target="_blank">Bitfury</a> болон <span> </span>
-								<a href="https://mdki.mn" style={{color: '#07689F', fontWeight: 900}} target="_blank">MDKI</a> <span> </span>
+								<a href="https://bitfury.com" style={{color: 'darkorange' ,fontWeight: 900}} target="_blank">"Bitfury"</a> болон <span> </span>
+								<a href="https://mdki.mn" style={{color: '#07689F', fontWeight: 550}} target="_blank">"Эм Ди Кэй Ай"</a> <span> </span>
 								компани нь  бага цахилгаан зарцуулан, өндөр хүчин чадал бүхий төхөөрөмжөөр “Биткойн” олборлох боломжийг <span> </span>
 								<a style={{color: "#07689F" ,fontWeight: 900}}>BDC</a>
 								<span> </span>токеноор дамжуулан хүргэж байна.   </p>

@@ -5,7 +5,7 @@ export default function Top (){
             <div className="row">
                 <div className="col-md-12">
                     <div className="page-banner text-center">
-                        <h1 className="sub-banner-title">News</h1>
+                        <h1 className="sub-banner-title">Мэдээ</h1>
                     </div>
                 </div>
             </div>

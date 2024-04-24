@@ -29,7 +29,7 @@ export default function Navbar (){
 							</li>
 						</ul>
 						<div className="signin d-inline-block">
-							<a href="https://capex.mn/launchpad" target="_blank" className="btn nav-link">Join IEO</a>
+							<a href="https://capex.mn/trade/BDC-MNT" target="_blank" className="btn nav-link">Join IEO</a>
 						</div>
 					</div>
 				</div>

@@ -5,7 +5,7 @@ import axios from 'axios'
 
 
 
-export default function Login ({signModal ,signToggleModal,setSignModal }){
+export default function Login ({signModal ,signToggleModal,setSignModal , toggleModal, }){
     const [data, setData] = useState({ email: "", password: "" });
 	const [error, setError] = useState("");
 
@@ -33,8 +33,10 @@ export default function Login ({signModal ,signToggleModal,setSignModal }){
     return(
       
  
-             <div className={styles.login_container}>
-            <div className={styles.login_form_container}>
+             <div className={styles.login_container} >
+              
+            <div className={styles.login_form_container} >
+            
                 <div className={styles.left}>
                
                 <form action="" className={styles.form_container} style={{position:"relative"}}  onSubmit={handleSubmit}>
@@ -66,8 +68,10 @@ export default function Login ({signModal ,signToggleModal,setSignModal }){
                         </button>
                     </form>
                 </div>
-                <div className={styles.right}>
-                    
+                <div className={styles.right} >
+                 {/* <div >
+                 <span  className="close" onClick={toggleModal} style={{color: "white",  fontSize:"40px", cursor: "pointer", marginTop:"-100px", marginRight:"-170px", }}>&times;</span>
+                 </div> */}
                 <div className="col-lg-8 col-md-12 text-center flex-align justify-center " id="signup-img">
                     <div className="work-box"  id="ico" >
 							<div className="work-box-bg my-0  " >

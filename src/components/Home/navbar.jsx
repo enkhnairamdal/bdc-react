@@ -52,7 +52,7 @@ export function Navbar(){
 	</header>
     <div id="fb-root"></div>
 <div id="fb-customer-chat" className="fb-customerchat"></div>
-    {loginModal && <Login signModal = {signModal} signToggleModal={signToggleModal} setSignModal={setSignModal}/>}
+    {loginModal && <Login signModal = {signModal} signToggleModal={signToggleModal} setSignModal={setSignModal} toggleModal={toggleModal}/>}
 	{signModal && <Signup />}
     </>
     )
